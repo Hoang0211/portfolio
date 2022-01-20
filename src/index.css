@@ -8,13 +8,11 @@
 
   /* color */
   /* light theme */
-  --clr-primaryLight: #eaeaea;
-  --clr-secondaryLight: #ffffff;
-  --clr-primaryLightText: #000000;
-  --clr-secondaryLightText: #564b4b;
+  --clr-primaryLight: #ffffff;
+  --clr-secondaryLight: #c5c5c5;
   /* dark theme */
-  --clr-primaryDark: #3a3a3a;
-  --clr-secondaryDark: #000000;
+  --clr-primaryDark: #000000;
+  --clr-secondaryDark: #5c5c5c;
 }
 
 *,
@@ -24,16 +22,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-  font-family: var(--ff-primary);
-  color: var(--clr-primaryLightText);
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--ff-secondary);
 }
 
 h1 {
@@ -55,16 +48,6 @@ h6 {
   font-size: 16px;
 }
 
-p,
-li,
-span,
-label,
-input,
-textarea {
-  font-family: var(--ff-secondary);
-  color: var(--clr-secondaryLightText);
-}
-
 a {
   text-decoration: none;
 }
@@ -75,4 +58,5 @@ ul {
 
 section {
   min-height: 100vh;
+  padding-top: var(--nav-height);
 }
