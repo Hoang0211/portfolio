@@ -1,1 +1,78 @@
+:root {
+  /* layout */
+  --nav-height: 60px;
 
+  /* font */
+  --ff-primary: "Russo One";
+  --ff-secondary: "Roboto Mono";
+
+  /* color */
+  /* light theme */
+  --clr-primaryLight: #eaeaea;
+  --clr-secondaryLight: #ffffff;
+  --clr-primaryLightText: #000000;
+  --clr-secondaryLightText: #564b4b;
+  /* dark theme */
+  --clr-primaryDark: #3a3a3a;
+  --clr-secondaryDark: #000000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: var(--ff-primary);
+  color: var(--clr-primaryLightText);
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  font-family: var(--ff-secondary);
+  color: var(--clr-secondaryLightText);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  min-height: 100vh;
+}
