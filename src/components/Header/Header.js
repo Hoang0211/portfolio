@@ -6,31 +6,31 @@ const Header = () => {
   return (
     <header>
       <nav className={classes["nav"]}>
-        <span className={classes["nav__logo"]}>Nguyen Hoang</span>
+        <span className={classes["logo"]}>Nguyen Hoang</span>
 
         <input type="checkbox" className={classes["check"]} id="check" />
-        <label className={classes["nav__toggle"]} for="check">
-          <FaBars className={classes["bar-icon"]} />
+        <label className={classes["toggle"]} for="check">
+          <FaBars className={classes["bars-icon"]} />
         </label>
 
-        <ul className={classes["nav__list"]}>
-          <li className={classes["nav__item"]}>
-            <a href="#home" className={classes["nav__link"]}>
+        <ul className={classes["nav-list"]}>
+          <li className={classes["nav-item"]}>
+            <a href="#home" className={classes["nav-link"]}>
               Home
             </a>
           </li>
-          <li className={classes["nav__item"]}>
-            <a href="#about" className={classes["nav__link"]}>
+          <li className={classes["nav-item"]}>
+            <a href="#about" className={classes["nav-link"]}>
               About
             </a>
           </li>
-          <li className={classes["nav__item"]}>
-            <a href="#projects" className={classes["nav__link"]}>
+          <li className={classes["nav-item"]}>
+            <a href="#projects" className={classes["nav-link"]}>
               Projects
             </a>
           </li>
-          <li className={classes["nav__item"]}>
-            <a href="#contact" className={classes["nav__link"]}>
+          <li className={classes["nav-item"]}>
+            <a href="#contact" className={classes["nav-link"]}>
               Contact
             </a>
           </li>

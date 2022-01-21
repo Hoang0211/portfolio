@@ -47,15 +47,12 @@ h5 {
 h6 {
   font-size: 16px;
 }
-
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
 }
-
 section {
   min-height: 100vh;
   padding-top: var(--nav-height);
