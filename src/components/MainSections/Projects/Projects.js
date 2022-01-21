@@ -1,5 +1,11 @@
+import classes from "./Projects.module.css";
+
 const Projects = () => {
-  return <section id="projects">Projects Section</section>;
+  return (
+    <section className={classes["projects"]} id="projects">
+      Projects Section
+    </section>
+  );
 };
 
 export default Projects;
