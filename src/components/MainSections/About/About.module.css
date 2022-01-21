@@ -1,5 +1,5 @@
 .about {
-  min-height: 800px;
+  min-height: 1000px;
   width: 1000px;
   margin: 0 auto;
   padding: calc(var(--nav-height) + 20px) 40px;
@@ -14,23 +14,23 @@
   color: var(--clr-accent);
 }
 .title {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   text-align: center;
 }
 .about-picture-bg {
   width: 400px;
-  height: 600px;
+  height: 700px;
   margin-right: 40px;
   background-image: url("../../../assets/Avt3.jpg");
   background-size: cover;
   background-position: center;
 }
 .right-column p {
-  padding: 10px 0;
+  padding: 25px 0;
   font-size: 20px;
 }
 .statement {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .skills-container {
   padding: 20px 0;
