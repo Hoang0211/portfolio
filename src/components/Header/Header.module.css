@@ -36,10 +36,10 @@
   color: var(--clr-primaryLight);
 }
 .nav-item:hover {
-  background: var(--clr-secondaryDark);
+  background: var(--clr-accent);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
   .toggle {
     padding-right: 20px;
     display: inline-block;
@@ -69,7 +69,6 @@
   }
   .nav-item:hover {
     border: none;
-    background: var(--clr-secondaryDark);
   }
   .check:checked ~ .nav-list {
     right: 0;

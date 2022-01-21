@@ -5,14 +5,14 @@
   /* font */
   --ff-primary: "Russo One";
   --ff-secondary: "Roboto Mono";
+  --ff-btn: "Roboto";
 
   /* color */
-  /* light theme */
   --clr-primaryLight: #ffffff;
-  --clr-secondaryLight: #c5c5c5;
-  /* dark theme */
+  --clr-secondaryLight: #c2c2c2;
   --clr-primaryDark: #000000;
   --clr-secondaryDark: #5c5c5c;
+  --clr-accent: #1c73ff;
 }
 
 *,
@@ -55,5 +55,4 @@ ul {
 }
 section {
   min-height: 100vh;
-  padding-top: var(--nav-height);
 }
