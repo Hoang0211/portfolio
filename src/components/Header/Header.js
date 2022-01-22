@@ -9,7 +9,7 @@ const Header = () => {
         <span className={classes["logo"]}>Nguyen Hoang</span>
 
         <input type="checkbox" className={classes["check"]} id="check" />
-        <label className={classes["toggle"]} for="check">
+        <label className={classes["toggle"]} htmlFor="check">
           <FaBars className={classes["bars-icon"]} />
         </label>
 
