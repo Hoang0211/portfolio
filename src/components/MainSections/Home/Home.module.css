@@ -53,8 +53,13 @@
 .left-column h1 {
   font-family: var(--ff-secondary);
 }
-.left-column a {
+.left-column .action {
+  height: 70px;
   margin-top: 15px;
+  display: flex;
+}
+.left-column .contact-btn {
+  margin-right: 20px;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
@@ -66,7 +71,7 @@
   transition: 1s;
   cursor: pointer;
 }
-.left-column a:hover {
+.left-column .contact-btn:hover {
   transform: scale(1.1);
 }
 .name {
@@ -75,6 +80,7 @@
 .right-column {
   padding: 0 40px 0 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -93,6 +99,27 @@
   border-radius: 50%;
   background-image: url("../../../assets/Avt.jpg");
   background-size: cover;
+}
+.social-container {
+  height: 50px;
+  margin-top: 15px;
+}
+.linkedin,
+.github,
+.codepen {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--clr-primaryLight);
+  background: var(--clr-accent);
+  transition: 1s;
+}
+.linkedin:hover,
+.github:hover,
+.codepen:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1100px) {

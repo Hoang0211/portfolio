@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedinIn, FaCodepen } from "react-icons/fa";
+
 import classes from "./Home.module.css";
 
 const Home = () => {
@@ -17,11 +19,36 @@ const Home = () => {
               <span className={classes["name"]}>Nguyen Hoang</span> <br />
               Front End Dev
             </h1>
-            <a href="#contact">Contact Me</a>
+            <a className={classes["contact-btn"]} href="#contact">
+              Contact Me
+            </a>
           </div>
           <div className={classes["right-column"]}>
             <div className={classes["profile-picture"]}>
               <div className={classes["profile-picture-bg"]}></div>
+            </div>
+            <div className={classes["social-container"]}>
+              <a
+                href="https://www.linkedin.com/in/hoang-nguyen-8b6733228/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn className={classes["linkedin"]} />
+              </a>
+              <a
+                href="https://github.com/Hoang0211"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub className={classes["github"]} />
+              </a>
+              <a
+                href="https://codepen.io/n3verland0211"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaCodepen className={classes["codepen"]} />
+              </a>
             </div>
           </div>
         </div>
