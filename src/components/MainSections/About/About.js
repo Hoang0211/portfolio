@@ -1,3 +1,5 @@
+import CV from "../../../assets/Nguyen-Viet-Hoang-CV.pdf";
+
 import classes from "./About.module.css";
 
 const About = () => {
@@ -19,7 +21,7 @@ const About = () => {
           <h2 className={classes["subtitle"]}>Skills</h2>
           <p>
             A front end developer with primary focus on React:{" "}
-            <a target="_blank" href="">
+            <a target="_blank" href={CV} rel="noreferrer">
               Download Resume
             </a>
           </p>
