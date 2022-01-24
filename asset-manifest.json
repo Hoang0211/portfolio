@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7c7bcc8c.css",
-    "main.js": "/portfolio/static/js/main.db3a5f1c.js",
+    "main.js": "/portfolio/static/js/main.de603e37.js",
     "static/media/SpaceW.jpg": "/portfolio/static/media/SpaceW.3b26c48cf3847aa358d6.jpg",
     "static/media/Avt.jpg": "/portfolio/static/media/Avt.724380fbcec67634bf5d.jpg",
     "static/media/MovieInfo.jpg": "/portfolio/static/media/MovieInfo.b4ff953aeff6103d6ecb.jpg",
     "static/media/HealthyDietQuiz.jpg": "/portfolio/static/media/HealthyDietQuiz.ff304892515f485ad415.jpg",
-    "static/media/Nguyen-Viet-Hoang-CV.pdf": "/portfolio/static/media/Nguyen-Viet-Hoang-CV.26f407d9db7296e5afc6.pdf",
+    "static/media/Nguyen-Viet-Hoang-CV.pdf": "/portfolio/static/media/Nguyen-Viet-Hoang-CV.9a84632616ae6846f4b3.pdf",
     "static/media/Avt2.jpg": "/portfolio/static/media/Avt2.deab0205835446a91032.jpg",
     "static/media/WeatherInfo.jpg": "/portfolio/static/media/WeatherInfo.58776a0aba9071ec596f.jpg",
     "static/media/Calculator.jpg": "/portfolio/static/media/Calculator.31e5625a0be65ff039e8.jpg",
     "static/media/TodoList.jpg": "/portfolio/static/media/TodoList.a939464ccb710c2db8fd.jpg",
     "index.html": "/portfolio/index.html",
     "main.7c7bcc8c.css.map": "/portfolio/static/css/main.7c7bcc8c.css.map",
-    "main.db3a5f1c.js.map": "/portfolio/static/js/main.db3a5f1c.js.map"
+    "main.de603e37.js.map": "/portfolio/static/js/main.de603e37.js.map"
   },
   "entrypoints": [
     "static/css/main.7c7bcc8c.css",
-    "static/js/main.db3a5f1c.js"
+    "static/js/main.de603e37.js"
   ]
 }
