@@ -34,6 +34,7 @@ button {
   background: var(--clr-accent);
   color: var(--clr-primaryLight);
   font-size: 25px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 460px) {
