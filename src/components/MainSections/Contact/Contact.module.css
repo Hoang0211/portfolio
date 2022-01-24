@@ -63,7 +63,7 @@ form {
 textarea {
   min-height: 150px;
 }
-button {
+form > button {
   padding: 15px 30px;
   border-radius: 5px;
   outline: none;
@@ -74,7 +74,7 @@ button {
   transition: 0.5s;
   cursor: pointer;
 }
-button:hover {
+form > button:hover {
   transform: scale(1.02);
 }
 

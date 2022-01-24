@@ -1,31 +1,53 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import { BsPersonFill } from "react-icons/bs";
 import { TiLocation } from "react-icons/ti";
 import { MdEmail } from "react-icons/md";
 
+import StatusModal from "./StatusModal";
+
 import classes from "./Contact.module.css";
 
 const Contact = () => {
-  const form = useRef();
+  const [statusIsShow, setStatusIsShow] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const formRef = useRef();
+  const emailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
+
+  const showStatus = () => {
+    setStatusIsShow(true);
+  };
+
+  const hideStatus = () => {
+    emailRef.current.value = "";
+    subjectRef.current.value = "";
+    messageRef.current.value = "";
+    setStatusIsShow(false);
+  };
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
-
+    showStatus();
+    setStatus("Please wait...");
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
+        formRef.current,
         process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("SUCCESS!", result.status, result.text);
+          setStatus("Your message has been sent!");
         },
         (error) => {
-          console.log(error.text);
+          console.log("FAILED...", error);
+          setStatus("Something went wrong, please try again!");
         }
       );
   };
@@ -65,9 +87,13 @@ const Contact = () => {
       </div>
       <div className={classes["message"]}>
         <h2 className={classes["subtitle"]}>Message me</h2>
-        <form ref={form} onSubmit={formSubmitHandler}>
+        {statusIsShow && (
+          <StatusModal status={status} hideStatus={hideStatus} />
+        )}
+        <form ref={formRef} onSubmit={formSubmitHandler}>
           <input
             className={classes["input-control"]}
+            ref={emailRef}
             type="email"
             name="email"
             placeholder="Email"
@@ -75,6 +101,7 @@ const Contact = () => {
           />
           <input
             className={classes["input-control"]}
+            ref={subjectRef}
             type="text"
             name="subject"
             placeholder="Subject"
@@ -82,6 +109,7 @@ const Contact = () => {
           />
           <textarea
             className={classes["input-control"]}
+            ref={messageRef}
             name="message"
             placeholder="Message..."
           ></textarea>
