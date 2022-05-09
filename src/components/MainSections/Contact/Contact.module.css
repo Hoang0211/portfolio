@@ -56,12 +56,14 @@ form {
   border: none;
   border-radius: 2px;
   font-size: 20px;
+  font-family: var(--ff-secondary);
 }
 .input-control:focus {
   outline: none;
 }
 textarea {
   min-height: 150px;
+  font-family: var(--ff-secondary);
 }
 form > button {
   padding: 15px 30px;
