@@ -35,6 +35,7 @@ const Home = () => {
                 href='https://www.linkedin.com/in/hoang-nguyen-8b6733228/'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='linkedin'
               >
                 <FaLinkedinIn
                   className={`${classes['icon']} ${classes['linkedin']}`}
@@ -44,6 +45,7 @@ const Home = () => {
                 href='https://github.com/Hoang0211'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='github'
               >
                 <FaGithub
                   className={`${classes['icon']} ${classes['github']}`}
@@ -53,6 +55,7 @@ const Home = () => {
                 href='https://codepen.io/n3verland0211'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='codepen'
               >
                 <FaCodepen
                   className={`${classes['icon']} ${classes['codepen']}`}
