@@ -1,0 +1,96 @@
+.contact {
+  min-height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + 20px) 40px;
+  display: flex;
+  flex-direction: column;
+}
+.title,
+.subtitle {
+  color: var(--clr-primaryDark);
+}
+.title {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.subtitle {
+  padding-bottom: 25px;
+}
+.info,
+.message {
+  width: 100%;
+  margin: 0 auto;
+}
+.info {
+  margin-bottom: 40px;
+}
+.intro {
+  font-size: 25px;
+}
+.contact-container p {
+  font-size: 20px;
+}
+.contact-info {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+.info-symbol {
+  margin-right: 20px;
+  font-size: 35px;
+}
+.info-title {
+  font-weight: bold;
+}
+form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: var(--clr-secondaryLight);
+}
+.input-control {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: var(--ff-secondary);
+}
+.input-control:focus {
+  outline: none;
+}
+textarea {
+  min-height: 150px;
+  font-family: var(--ff-secondary);
+}
+form > button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  outline: none;
+  background: var(--clr-accent);
+  color: var(--clr-primaryLight);
+  font-size: 30px;
+  font-family: var(--ff-btn);
+  transition: 0.5s;
+  cursor: pointer;
+}
+form > button:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 1100px) {
+  .contact {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .contact {
+    width: 90%;
+    padding: calc(var(--nav-height) + 20px) 0;
+  }
+  .info-symbol {
+    display: none;
+  }
+}
