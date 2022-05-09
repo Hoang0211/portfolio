@@ -6,21 +6,22 @@
   align-items: center;
   background: var(--clr-secondaryLight);
 }
-.intro-wrapper {
+
+.home__wrapper {
   width: 1000px;
   box-shadow: -1px 1px 3px -1px var(--clr-primaryDark);
   border-radius: 5px 5px 0 0;
   background: var(--clr-primaryLight);
 }
 
-.dots-wrapper {
+.home__dots {
   padding: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-bottom: 2px solid var(--clr-secondaryLight);
 }
-.dots-wrapper > * {
+.dot {
   height: 15px;
   width: 15px;
   margin: 0 5px;
@@ -28,37 +29,33 @@
   box-shadow: -1px 1px 3px -1px var(--clr-secondaryDark);
   background: black;
 }
-.dot-yellow {
+.dot-red {
   background: #fc6058;
 }
-.dot-green {
+.dot-yellow {
   background: #fec02f;
 }
-.dot-red {
+.dot-green {
   background: #2aca3e;
 }
 
-.content-wrapper {
+.home__content {
   min-height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.left-column {
+
+.home__column-left {
   padding: 0 10px 0 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.left-column h1 {
+.home__title {
   font-family: var(--ff-secondary);
 }
-.left-column .action {
-  height: 70px;
-  margin-top: 15px;
-  display: flex;
-}
-.left-column .contact-btn {
+.home__contact {
   margin-top: 20px;
   padding: 15px 30px;
   border: none;
@@ -68,23 +65,24 @@
   color: var(--clr-primaryLight);
   font-size: 30px;
   font-family: var(--ff-btn);
-  transition: 1s;
+  transition: 0.5s;
   cursor: pointer;
 }
-.left-column .contact-btn:hover {
+.home__contact:hover {
   transform: scale(1.1);
 }
-.name {
+.home__name {
   color: var(--clr-accent);
 }
-.right-column {
+
+.home__column-right {
   padding: 0 40px 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.profile-picture {
+.home__profile {
   height: 350px;
   width: 350px;
   display: flex;
@@ -93,20 +91,18 @@
   box-shadow: 0 1px 0 0 var(--clr-accent);
   border-radius: 50%;
 }
-.profile-picture-bg {
+.home__profile-bg {
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  background-image: url("../../../assets/Avt.jpg");
+  background-image: url('../../../assets/Avt.jpg');
   background-size: cover;
 }
-.social-container {
+.home__socials {
   height: 40px;
   margin-top: 15px;
 }
-.linkedin,
-.github,
-.codepen {
+.home__icon {
   height: 40px;
   width: 40px;
   margin: 0 10px;
@@ -114,42 +110,40 @@
   border-radius: 5px;
   color: var(--clr-primaryLight);
   background: var(--clr-accent);
-  transition: 1s;
+  transition: 0.5s;
 }
-.linkedin:hover,
-.github:hover,
-.codepen:hover {
+.home__icon:hover {
   transform: scale(1.2);
 }
 
 @media screen and (max-width: 1100px) {
-  .intro-wrapper {
+  .home__wrapper {
     width: 90%;
   }
 }
 @media screen and (max-width: 1000px) {
-  .content-wrapper {
+  .home__content {
     flex-direction: column-reverse;
   }
-  .left-column {
+  .home__column-left {
     padding: 20px 0 40px 0;
     display: flex;
     align-items: center;
     text-align: center;
   }
-  .right-column {
+  .home__column-right {
     padding: 40px 0 0 0;
   }
-  .social-container {
+  .home__socials {
     margin-top: 30px;
   }
 }
 @media screen and (max-width: 320px) {
-  .profile-picture {
+  .home__profile {
     height: 280px;
     width: 280px;
   }
-  .profile-picture-bg {
+  .home__profile-bg {
     width: 250px;
     height: 250px;
   }

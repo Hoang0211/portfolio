@@ -1,56 +1,65 @@
-import { FaGithub, FaLinkedinIn, FaCodepen } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaCodepen } from 'react-icons/fa';
 
-import classes from "./Home.module.css";
+import classes from './Home.module.css';
 
 const Home = () => {
   return (
-    <section className={classes["home"]} id="home">
-      <div className={classes["intro-wrapper"]}>
-        <div className={classes["dots-wrapper"]}>
-          <div className={classes["dot-yellow"]}></div>
-          <div className={classes["dot-green"]}></div>
-          <div className={classes["dot-red"]}></div>
+    <section className={classes['home']} id='home'>
+      <div className={classes['home__wrapper']}>
+        <div className={classes['home__dots']}>
+          <div className={`${classes['dot']} ${classes['dot-red']}`}></div>
+          <div className={`${classes['dot']} ${classes['dot-yellow']}`}></div>
+          <div className={`${classes['dot']} ${classes['dot-green']}`}></div>
         </div>
 
-        <div className={classes["content-wrapper"]}>
-          <div className={classes["left-column"]}>
-            <h1>
+        <div className={classes['home__content']}>
+          <article className={classes['home__column-left']}>
+            <h1 className={classes['home__title']}>
               Hi, I'm <br />
-              <span className={classes["name"]}>Nguyen Hoang</span> <br />
+              <span className={classes['home__name']}>Nguyen Hoang</span> <br />
               Front End Dev
             </h1>
-            <a className={classes["contact-btn"]} href="#contact">
+            <a
+              className={`${classes['btn']} ${classes['home__contact']}`}
+              href='#contact'
+            >
               Contact Me
             </a>
-          </div>
-          <div className={classes["right-column"]}>
-            <div className={classes["profile-picture"]}>
-              <div className={classes["profile-picture-bg"]}></div>
+          </article>
+          <article className={classes['home__column-right']}>
+            <div className={classes['home__profile']}>
+              <div className={classes['home__profile-bg']}></div>
             </div>
-            <div className={classes["social-container"]}>
+            <div className={classes['home__socials']}>
               <a
-                href="https://www.linkedin.com/in/hoang-nguyen-8b6733228/"
-                target="_blank"
-                rel="noreferrer"
+                href='https://www.linkedin.com/in/hoang-nguyen-8b6733228/'
+                target='_blank'
+                rel='noreferrer'
               >
-                <FaLinkedinIn className={classes["linkedin"]} />
+                <FaLinkedinIn
+                  className={`${classes['home__icon']} ${classes['home__socials-linkedin']}`}
+                />
               </a>
               <a
-                href="https://github.com/Hoang0211"
-                target="_blank"
-                rel="noreferrer"
+                href='https://github.com/Hoang0211'
+                target='_blank'
+                rel='noreferrer'
               >
-                <FaGithub className={classes["github"]} />
+                <FaGithub
+                  className={`${classes['home__icon']} ${classes['home__socials-github']}`}
+                />
               </a>
               <a
-                href="https://codepen.io/n3verland0211"
-                target="_blank"
-                rel="noreferrer"
+                href='https://codepen.io/n3verland0211'
+                target='_blank'
+                rel='noreferrer'
               >
-                <FaCodepen className={classes["codepen"]} />
+                <FaCodepen
+                  className={`${classes['home__icon']} ${classes['home__socials-codepen']}`}
+                />
               </a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
