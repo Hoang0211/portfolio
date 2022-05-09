@@ -7,14 +7,14 @@
   background: var(--clr-secondaryLight);
 }
 
-.home__wrapper {
+.wrapper {
   width: 1000px;
   box-shadow: -1px 1px 3px -1px var(--clr-primaryDark);
   border-radius: 5px 5px 0 0;
   background: var(--clr-primaryLight);
 }
 
-.home__dots {
+.dots {
   padding: 10px;
   display: flex;
   justify-content: flex-start;
@@ -39,23 +39,23 @@
   background: #2aca3e;
 }
 
-.home__content {
+.content {
   min-height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.home__column-left {
+.column-left {
   padding: 0 10px 0 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.home__title {
+.title {
   font-family: var(--ff-secondary);
 }
-.home__contact {
+.btn-contact {
   margin-top: 20px;
   padding: 15px 30px;
   border: none;
@@ -68,21 +68,21 @@
   transition: 0.5s;
   cursor: pointer;
 }
-.home__contact:hover {
+.btn-contact:hover {
   transform: scale(1.1);
 }
-.home__name {
+.name {
   color: var(--clr-accent);
 }
 
-.home__column-right {
+.column-right {
   padding: 0 40px 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.home__profile {
+.profile {
   height: 350px;
   width: 350px;
   display: flex;
@@ -91,18 +91,18 @@
   box-shadow: 0 1px 0 0 var(--clr-accent);
   border-radius: 50%;
 }
-.home__profile-bg {
+.profile-bg {
   width: 320px;
   height: 320px;
   border-radius: 50%;
   background-image: url('../../../assets/Avt.jpg');
   background-size: cover;
 }
-.home__socials {
+.socials {
   height: 40px;
   margin-top: 15px;
 }
-.home__icon {
+.icon {
   height: 40px;
   width: 40px;
   margin: 0 10px;
@@ -112,38 +112,38 @@
   background: var(--clr-accent);
   transition: 0.5s;
 }
-.home__icon:hover {
+.icon:hover {
   transform: scale(1.2);
 }
 
 @media screen and (max-width: 1100px) {
-  .home__wrapper {
+  .wrapper {
     width: 90%;
   }
 }
 @media screen and (max-width: 1000px) {
-  .home__content {
+  .content {
     flex-direction: column-reverse;
   }
-  .home__column-left {
+  .column-left {
     padding: 20px 0 40px 0;
     display: flex;
     align-items: center;
     text-align: center;
   }
-  .home__column-right {
+  .column-right {
     padding: 40px 0 0 0;
   }
-  .home__socials {
+  .socials {
     margin-top: 30px;
   }
 }
 @media screen and (max-width: 320px) {
-  .home__profile {
+  .profile {
     height: 280px;
     width: 280px;
   }
-  .home__profile-bg {
+  .profile-bg {
     width: 250px;
     height: 250px;
   }
