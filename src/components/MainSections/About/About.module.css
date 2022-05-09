@@ -6,9 +6,11 @@
   display: flex;
   flex-direction: column;
 }
-.about-container {
+
+.content {
   display: flex;
 }
+
 .title,
 .subtitle {
   color: var(--clr-primaryDark);
@@ -17,33 +19,35 @@
   padding-bottom: 50px;
   text-align: center;
 }
-.about-picture-bg {
+
+.picture-bg {
   width: 400px;
   height: 700px;
   margin-right: 40px;
-  background-image: url("../../../assets/Avt2.jpg");
+  background-image: url('../../../assets/Avt2.jpg');
   background-size: cover;
   background-position: center;
 }
-.right-column p {
+
+.column-right p {
   padding: 25px 0;
   font-size: 20px;
 }
 .statement {
   margin-bottom: 30px;
 }
-.skills-container {
+
+.skills {
   padding: 20px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   font-size: 20px;
   background: var(--clr-secondaryLight);
 }
-.skills-container ul {
-  list-style: circle;
+.skills ul {
+  list-style: disc;
 }
-.skills-container li {
+.skills li {
   list-style-position: inside;
   padding: 5px 0;
   text-align: left;
@@ -53,10 +57,19 @@
   .about {
     width: 90%;
   }
-  .about-picture-bg {
+  .picture-bg {
     display: none;
   }
-  .right-column {
+  .column-right {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills {
+    flex-wrap: wrap;
+  }
+  .skills ul {
+    width: 95%;
   }
 }

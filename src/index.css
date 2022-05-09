@@ -3,9 +3,9 @@
   --nav-height: 60px;
 
   /* font */
-  --ff-primary: "Russo One";
-  --ff-secondary: "Roboto Mono";
-  --ff-btn: "Roboto";
+  --ff-primary: 'Russo One';
+  --ff-secondary: 'Roboto Mono';
+  --ff-btn: 'Roboto';
 
   /* color */
   --clr-primaryLight: #ffffff;
@@ -33,10 +33,10 @@ h1 {
   font-size: 56px;
 }
 h2 {
-  font-size: 36px;
+  font-size: 52px;
 }
 h3 {
-  font-size: 28px;
+  font-size: 36px;
 }
 h4 {
   font-size: 24px;
