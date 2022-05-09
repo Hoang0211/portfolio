@@ -12,13 +12,13 @@
   display: block;
   object-fit: cover;
 }
-.project-title {
+.title {
   line-height: 50px;
   text-align: center;
   font-size: 25px;
   font-family: var(--ff-primary);
 }
-.project-overview {
+.overview {
   max-height: 220px;
   padding: 20px;
   display: flex;
@@ -37,6 +37,6 @@
 .code {
   margin-top: 20px;
 }
-.project-item:hover > .project-overview {
+.project-item:hover > .overview {
   transform: translateY(-100%);
 }

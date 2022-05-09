@@ -19,8 +19,11 @@
 }
 .subtitle {
   padding-bottom: 40px;
+  line-height: 1.5;
 }
-.projects-container {
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   gap: 40px;
@@ -28,7 +31,7 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .projects-container {
+  .container {
     width: 90%;
   }
 }
