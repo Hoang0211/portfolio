@@ -1,10 +1,10 @@
-![page load](./readme-assets/app-demo.gif)
+![page load](./readme-assets/portfolio-demo.gif)
 
-# todo-list
+# portfolio
 
-Todo list app created as a personal project.
+This is my profolio page!
 
-# [🔗 View Deployed Application](https://hoang0211.github.io/to-do-list/)
+# [🔗 View Deployed Application](https://hoang0211.github.io/portfolio/)
 
 ## Table Of Contents
 
@@ -16,14 +16,13 @@ Todo list app created as a personal project.
 
 ## Application Features
 
-A todo list web application that allow users to manage the status of their tasks.
+A portfolio web application about myself!
 
 ### Requirements
 
 - Simple to use interface.
-- Tasks can be added, edited, deleted, or marked as complete.
-- Tasks with different status can be filtered from the list.
-- Created tasks need to be stored in local storage so reloading web page will not remove them.
+- Visitors can send email to me through contact form.
+- Visitors are able to navigate to different pages (linkedin, github, codepen, deployed projects) using links.
 - Application layout is responsive.
 
   ![page load](./readme-assets/responsive-layout.gif)
@@ -35,8 +34,8 @@ A todo list web application that allow users to manage the status of their tasks
 ## Technologies Used
 
 - React.js (Hooks)
-- Node SASS
-- Local Storage
+- CSS Module
+- Email.js
 - GitHub Pages
 
 [Back To Top](#Table-Of-Contents)
