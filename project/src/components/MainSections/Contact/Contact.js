@@ -80,7 +80,7 @@ const Contact = () => {
             <MdEmail className={classes['info-symbol']} />
             <div>
               <p className={classes['info-title']}>Email</p>
-              <p>n3verland0211@gmail.com</p>
+              <p>nguyenhoang21155@gmail.com</p>
             </div>
           </li>
         </ul>

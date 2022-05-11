@@ -20,7 +20,7 @@ const About = () => {
           </p>
           <h3 className={classes['subtitle']}>Skills</h3>
           <p>
-            A front end developer with primary focus on React:
+            A front end developer with primary focus on React:{' '}
             <a target='_blank' href={CV} rel='noreferrer'>
               Download Resume
             </a>
