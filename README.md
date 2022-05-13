@@ -16,14 +16,14 @@ This is my profolio page!
 
 ## Application Features
 
-A portfolio web application about myself!
+The application serves as a personal portfolio that allows visitors to see my information and contact directly.
 
 ### Requirements
 
 - Simple to use interface.
-- Visitors can send email to me through contact form.
-- Visitors are able to navigate to different pages (linkedin, github, codepen, deployed projects) using links.
-- Application layout is responsive.
+- Direct email thorugh form submission.
+- Different personal links navigation.
+- Responsive layout.
 
   ![page load](./readme-assets/responsive-layout.gif)
 
@@ -33,10 +33,10 @@ A portfolio web application about myself!
 
 ## Technologies Used
 
-- React.js (Hooks)
+The email sending functionality is implmented using email.js. The project is deployed using GitHub Pages.
+
 - CSS Module
-- Email.js
-- GitHub Pages
+- React.js
 
 [Back To Top](#Table-Of-Contents)
 
