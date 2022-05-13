@@ -21,7 +21,7 @@ The application serves as a personal portfolio that allows visitors to see my in
 ### Requirements
 
 - Simple to use interface.
-- Direct email thorugh form submission.
+- Direct email using form submission.
 - Different personal links navigation.
 - Responsive layout.
 
